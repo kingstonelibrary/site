@@ -12203,14 +12203,15 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var PouchDB = __webpack_require__(/*! pouchdb */ "./node_modules/pouchdb/lib/index-browser.es.js");
+var PouchDB = __webpack_require__(/*! pouchdb */ "./node_modules/pouchdb/lib/index-browser.es.js")
 
-var movies = new PouchDB('Movies');
+var movies = new PouchDB('TestDB');
 movies
  .info()
  .then(function (info) {
    console.log(info);
  })
+
 
 
 /***/ })

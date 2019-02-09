@@ -1,7 +1,7 @@
 
 var PouchDB = require('pouchdb')
 
-var movies = new PouchDB('Movies');
+var movies = new PouchDB('TestDB');
 movies
  .info()
  .then(function (info) {
