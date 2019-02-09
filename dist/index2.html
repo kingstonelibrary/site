@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Step1</title>
+  <!-- <script type="text/javascript" src="app.bundle.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/pouchdb/5.4.5/pouchdb.min.js"></script>
+</head>
+<body>
+
+  <script>
+    var movies = new PouchDB('TestDB');
+    movies
+    .info()
+    .then(function (info) {
+      console.log(info);
+    })
+  </script>
+
+</body>
+</html>
